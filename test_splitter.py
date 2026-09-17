@@ -56,7 +56,11 @@ def test_format_money_shows_dollars_and_cents():
 #
 # Your tests go below this line.
 #
+def test_largest():
+    assert splitter.largest(TRIP) == 12000
 
+def test_largest_on_empty_array():
+    assert splitter.largest([]) == 0
 
 # --- TRIP-5  the smallest single expense -------------------------------
 #
