@@ -54,7 +54,7 @@ def format_money(cents):
 # Your story. Write largest() below this line.
 #
 def largest(items):
-    return max(item["amount"] for item in items)
+    return max(item["amount"] for item in items) if len(items) > 0 else 0
 
 
 # --- TRIP-5  the smallest single expense -------------------------------
